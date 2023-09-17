@@ -1,0 +1,20 @@
+server:
+  port: 5100
+
+springdoc:
+  api-docs:
+    path : /t2c
+  swagger-ui:
+    path: /swagger-ui.html
+    oauth:
+      use-basic-authentication-with-access-code-grant: true
+
+spring:
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          issuer-uri: http://localhost:8080/auth/realms/t2c
+          jwk-set-uri: http://localhost:8080/auth/realms/t2c/protocol/openid-connect/certs
+  profiles:
+    active: local

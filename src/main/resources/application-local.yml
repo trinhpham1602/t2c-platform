@@ -1,0 +1,11 @@
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: t2c-platform-client
+      client-secret: fKKvjW6urc2OCjnCIuxc9DhsnveTxcQe
+    oauth2-redirect-url: http://localhost:5100/t2c/swagger-ui/oauth2-redirect.html
+
+swagger:
+  authorization-url: http://localhost:8080/auth/realms/t2c/protocol/openid-connect/auth
+  token-url: http://localhost:8080/auth/realms/t2c/protocol/openid-connect/token
+  server-url: http://localhost:5100
