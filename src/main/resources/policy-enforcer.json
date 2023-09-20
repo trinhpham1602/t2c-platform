@@ -1,6 +1,6 @@
 {
   "realm": "t2c",
-  "auth-server-url": "http://localhost:8080/auth",
+  "auth-server-url": "http://localhost:5001/auth",
   "resource": "t2c-platform-client",
   "credentials": {
     "secret": "fKKvjW6urc2OCjnCIuxc9DhsnveTxcQe"

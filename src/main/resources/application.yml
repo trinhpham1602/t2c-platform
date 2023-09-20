@@ -3,18 +3,18 @@ server:
 
 springdoc:
   api-docs:
-    path : /t2c
+    path: /t2c-api
+
   swagger-ui:
-    path: /swagger-ui.html
+    path: t2c/ui
     oauth:
       use-basic-authentication-with-access-code-grant: true
 
-spring:
-  security:
-    oauth2:
-      resource-server:
-        jwt:
-          issuer-uri: http://localhost:8080/auth/realms/t2c
-          jwk-set-uri: http://localhost:8080/auth/realms/t2c/protocol/openid-connect/certs
   profiles:
     active: local
+
+  servlet:
+    multipart:
+      max-file-size: 4MB
+      max-request-size: 4MB
+      enabled: true
